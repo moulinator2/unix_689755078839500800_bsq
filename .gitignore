@@ -1,0 +1,12 @@
+*.o
+*.a
+*.gcda
+*.gcdo
+*.gcov
+*.gcna
+*.gcno
+.vscode
+.idea
+a.out
+setting_up
+coding-style-reports.logwet pje su

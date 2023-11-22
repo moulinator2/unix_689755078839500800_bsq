@@ -5,7 +5,7 @@
 ## Makefile
 ##
 
-NAME = setting_up
+NAME = bsq
 
 SRC = main.c utils.c my_putnbr.c setting_up.c my_getnbr.c
 OBJ = $(SRC:.c=.o)

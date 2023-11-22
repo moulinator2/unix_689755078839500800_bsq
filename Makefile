@@ -10,19 +10,21 @@ NAME = setting_up
 SRC = main.c utils.c my_putnbr.c setting_up.c my_getnbr.c
 OBJ = $(SRC:.c=.o)
 
+INCLUDE = -I./include
+
 CC = gcc
+
+CFLAGS = $(INCLUDE)
 
 VPATH = src
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME) $(CFLAGS)
 
 clean:
-	cd src
 	rm -f $(OBJ)
-	cd ../
 
 fclean: clean
 	rm -f $(NAME)
